@@ -65,11 +65,21 @@ def Messier_Objects():
 
     pd.DataFrame({'name':names,'ra':ra,'dec':dec}).to_csv('Messier_Objects.csv')
 
-
+def Solar_Objects():
+    midnight_ioMIT = observatory_setup().midnight(now, which="nearest")
+    target_names = ['jupiter', 'mars', 'venus', 'saturn', 'neptune','moon']
+    targets = [get_body(target,midnight_ioMIT) for target in target_names]
+    ra=[]
+    dec=[]
+    for i in range(len(targets)):
+        ra.append(targets[i].ra)
+        dec.append(targets[i].dec)
+    pd.DataFrame({'name':target_names,'ra':ra,'dec':dec}).to_csv('Solar_Objects.csv')
 
 
 observer_info()
 Messier_Objects()
+Solar_Objects()
 
 
 
