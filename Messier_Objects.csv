@@ -1,6 +1,11 @@
-,name,ra,dec
-0,vega,279d14m05.0452332s,38d47m01.2802416s
-1,polaris,37d57m16.418412s,89d15m50.792292s
-2,m1,83d37m59.88s,22d00m47.88s
-3,m42,83d49m12s,-5d23m24s
-4,m55,294d59m55.6512s,-30d57m53.1s
+,name,ra,dec,airmass
+0,vega,279d14m05.0452332s,38d47m01.2802416s,"<SkyCoord (AltAz: obstime=2459958.30106129, location=(1686522.66790407, 5810681.32622228, 2012981.01880343) m, pressure=0.0 hPa, temperature=0.0 deg_C, relative_humidity=0.0, obswl=1.0 micron): (az, alt) in deg
+    (14.28848393, -30.80396519)>"
+1,polaris,37d57m16.418412s,89d15m50.792292s,"<SkyCoord (AltAz: obstime=2459958.30106129, location=(1686522.66790407, 5810681.32622228, 2012981.01880343) m, pressure=0.0 hPa, temperature=0.0 deg_C, relative_humidity=0.0, obswl=1.0 micron): (az, alt) in deg
+    (359.37151868, 18.73523609)>"
+2,m1,83d37m59.88s,22d00m47.88s,"<SkyCoord (AltAz: obstime=2459958.30106129, location=(1686522.66790407, 5810681.32622228, 2012981.01880343) m, pressure=0.0 hPa, temperature=0.0 deg_C, relative_humidity=0.0, obswl=1.0 micron): (az, alt) in deg
+    (282.19972604, 60.5546252)>"
+3,m42,83d49m12s,-5d23m24s,"<SkyCoord (AltAz: obstime=2459958.30106129, location=(1686522.66790407, 5810681.32622228, 2012981.01880343) m, pressure=0.0 hPa, temperature=0.0 deg_C, relative_humidity=0.0, obswl=1.0 micron): (az, alt) in deg
+    (235.03445212, 51.13549562)>"
+4,m55,294d59m55.6512s,-30d57m53.1s,"<SkyCoord (AltAz: obstime=2459958.30106129, location=(1686522.66790407, 5810681.32622228, 2012981.01880343) m, pressure=0.0 hPa, temperature=0.0 deg_C, relative_humidity=0.0, obswl=1.0 micron): (az, alt) in deg
+    (180.60378048, -77.60356261)>"

@@ -1,0 +1,6 @@
+targets,ever_observable,always_observable
+vega,False,False
+polaris,False,False
+m1,True,False
+m42,True,False
+m55,False,False
