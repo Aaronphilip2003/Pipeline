@@ -127,6 +127,3 @@ Messier_Objects()
 Solar_Objects()
 finder(target_names=['vega', 'polaris', 'm1', 'm42', 'm55'])
 Observable()
-
-
-print("OK!")
