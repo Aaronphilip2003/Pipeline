@@ -14,3 +14,12 @@ The function cosmicCorrection takes a list of science frames as input, applies c
 The script also calls astroquery's skyview for a Finder chart of the object and astroplan's constraint for observability of objects.
 It also uses pyregion library to create a ds9 region file of the objects.
 It also uses shutil library to copy the files in processing folder to another location.
+
+## Photometry
+This script is used to match a catalog of sources with a specific image. The script takes an image file path as an input and uses astropy library to read the image and its header, then it uses the WCS (World Coordinate System) module to extract the coordinates of the center of the image. The script also defines several functions to perform various steps of image processing on the science frames.
+The get_table_from_ldac function takes a filename and a frame number as input and returns the table data from the specified frame of the file.
+The open_fits function opens the image specified by the input file path, reads the data and header of the image and computes some image statistics for scaling the image plot.
+The create_wcs function takes the data and header of the image as input, stores the image WCS into an object, gets the RA and Dec of the center of the image and sets the box size to search for catalog stars.
+The catalog_quering function takes the center coordinates of the image, box size, and a max magnitude of sources to be cross-matched against as inputs, queries Vizier for the sources in the specified region and returns the queried catalog.
+The wld_coord_2_img_coord function takes the WCS object and queried catalog as inputs, converts the world coordinates of the catalog sources to image coordinates, filters the sources which are close to the edges of the image and returns the final catalog of sources matched with the image.
+The script uses the Vizier module of astroquery library for querying the catalog and pandas library for data manipulation.
